@@ -30,6 +30,9 @@ function changeStyling(element, email)
 
 function emailIsFamiliar(email)
 {
+	// Emails are case-insensitive
+	email = toLowerCase();
+
 	// Return true if the email is simply in the set
 	if (familiarEmails.has(email))
 		return true;
