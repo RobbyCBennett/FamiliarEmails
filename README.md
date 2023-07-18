@@ -10,6 +10,9 @@ In your inbox, see an icon by email addresses to indicate whether they are famil
 
 ## Features
 
+Supported Websites
+* Gmail
+
 Edit Familiar Email Addresses
 * An interface to edit the email addresses which you consider to be familiar
 
