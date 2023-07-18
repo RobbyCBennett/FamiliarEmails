@@ -1,8 +1,8 @@
 # Familiar Emails
 
-<!-- ## Install
+## Install
 
-[Chrome Web Store](https://chrome.google.com/webstore/detail/familiar-emails/TODO) -->
+[Chrome Web Store](https://chrome.google.com/webstore/detail/familiar-emails/eobaggpemklmgjoghhbdlfmnbmjihcli)
 
 ## Introduction
 
