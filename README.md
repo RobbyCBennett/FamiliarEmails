@@ -1,9 +1,8 @@
 # Familiar Emails
 
-## Install
+<!-- ## Install
 
-<!-- TODO -->
-[Chrome Web Store](https://chrome.google.com/webstore/detail/familiar-emails/TODO)
+[Chrome Web Store](https://chrome.google.com/webstore/detail/familiar-emails/TODO) -->
 
 ## Introduction
 
@@ -34,7 +33,3 @@ Add Email Address
 	* Normal: `coworker@marketing.example.com`
 	* Wildcard: `*@marketing.example.com` or `*@*.example.com`
 4. Hit enter or click the plus button
-
-<!-- TODO -->
-<!-- Add a way to right-click an email and add it -->
-<!-- Document the way to right-click an email and add it -->
