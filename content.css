@@ -1,0 +1,39 @@
+/* Variables */
+:root {
+	--familiarEmailsExtensionUnfamiliar: #C44B43;
+	--familiarEmailsExtensionFamiliar: #3BBF84;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--familiarEmailsExtensionUnfamiliar: #C44B43;
+		--familiarEmailsExtensionFamiliar: #3BBF84;
+	}
+}
+
+
+/* All emails */
+span[email]::before {
+	content: '';
+	display: inline-block;
+	width: 0.75rem;
+	height: 0.75rem;
+	margin-right: 0.25rem;
+	font-weight: bold;
+}
+span[email].g2, div.yW > span[email], td.aqM + td span[email] {
+	margin-left: 0.25rem;
+}
+
+
+/* Unfamiliar emails */
+span[email].familiarEmailsExtensionUnfamiliar::before {
+	content: '?';
+	color: var(--familiarEmailsExtensionUnfamiliar);
+}
+
+
+/* Familiar emails */
+span[email].familiarEmailsExtensionFamiliar::before {
+	content: '✓';
+	color: var(--familiarEmailsExtensionFamiliar);
+}

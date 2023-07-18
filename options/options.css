@@ -1,0 +1,144 @@
+/* Variables */
+:root {
+	/* Colors */
+	--text: #323232;
+	--bg:   #FFFFFF;
+
+	--color:    #1F6346;
+	--colorDim: #9EE1C4;
+
+	--option: rgba(0, 0, 0, 3%);
+	--hover:  rgba(127, 127, 127, 15%);
+	--active: rgba(127, 127, 127, 25%);
+
+	--input: #FFFFFF;
+
+
+	/* Sizes */
+	--rem:    18px;
+	--margin: 1rem;
+
+
+	/* Transitions */
+	--transition: 0.25s;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* Colors */
+		--text: #EEEEEE;
+		--bg:   #292A2D;
+
+		--colorDim: #123A29;
+
+		--option: rgba(0, 0, 0, 10%);
+		--hover:  rgba(127, 127, 127, 10%);
+		--active: rgba(127, 127, 127, 20%);
+
+		--input: #1E1F21;
+	}
+}
+
+
+/* Fonts */
+@font-face {
+	font-family: raleway;
+	src: url('/assets/raleway.ttf') format('truetype');
+	font-display: block;
+}
+
+
+/* Fixes */
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+body {
+	user-select: none;
+}
+
+
+/* General */
+.hidden {
+	display: none;
+}
+html {
+	display: flex;
+	justify-content: center;
+}
+body {
+	color: var(--text);
+	background-color: var(--bg);
+	font-size: inherit;
+	margin: var(--margin);
+}
+body, input, button {
+	font-size: var(--rem);
+	font-family: raleway, sans-serif;
+}
+.relative {
+	position: relative;
+}
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+
+/* Header */
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: max-content;
+}
+header img {
+	width: var(--margin);
+	margin-right: calc(var(--margin) * 0.5);
+}
+
+
+/* Options */
+.option {
+	cursor: pointer;
+	display: flex;
+	white-space: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	min-height: calc(var(--rem) * 2);
+	padding-left: var(--margin);
+	padding-right: var(--margin);
+	background-color: var(--option);
+	transition: background-color var(--transition);
+}
+.option:hover, .option:focus-visible, .option:has(:focus-visible) {
+	background-color: var(--hover);
+}
+.option:focus-visible, .option:has(:focus-visible) {
+	box-shadow: inset 0.25rem 0 0 var(--color);
+}
+.option:active {
+	background-color: var(--active);
+}
+.option:first-child {
+	margin-top: var(--margin);
+}
+
+
+/* Option with rows */
+.rows {
+	flex-direction: column;
+	align-items: start;
+	padding-top: calc(var(--margin) * 0.5);
+	padding-bottom: var(--margin);
+}
+.rows >:first-child {
+	margin-top: calc(var(--margin) * 0.5);
+}
